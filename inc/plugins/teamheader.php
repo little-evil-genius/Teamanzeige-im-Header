@@ -118,22 +118,29 @@ function teamheader_install(){
     }
 
     // TEMPLATES ERSTELLEN
+    // Template Gruppe für jedes Design erstellen
+    $templategroup = array(
+        "prefix" => "teamheader",
+        "title" => $db->escape_string("Teamanzeige im Header"),
+    );
+
+    // TEMPLATES ERSTELLEN
     $insert_array = array(
-        'title'		=> 'header_teamheader',
+        'title'		=> 'teamheader',
         'template'	=> $db->escape_string('<table border="0" cellspacing="{$theme[\'borderwidth\']}" cellpadding="{$theme[\'tablespace\']}" class="tborder">
         <tr class="tcat">
            <td colspan="2">Unsere Teammitglieder</td>
         </tr>
            {$teamheader_bit}
      </table>'),
-        'sid'		=> '-1',
+        'sid'		=> '-2',
         'version'	=> '',
         'dateline'	=> TIME_NOW
     );
     $db->insert_query("templates", $insert_array);
 
     $insert_array = array(
-        'title'		=> 'header_teamheader_bit',
+        'title'		=> 'teamheader_bit',
         'template'	=> $db->escape_string('<tr>
         <td>
             {$teamavatar}
@@ -144,7 +151,7 @@ function teamheader_install(){
             {$lastvisit}
         </td>   
    </tr>'),
-        'sid'		=> '-1',
+        'sid'		=> '-2',
         'version'	=> '',
         'dateline'	=> TIME_NOW
     );
@@ -173,6 +180,9 @@ function teamheader_uninstall(){
 
     rebuild_settings();
 
+    // TEMPLATGRUPPE LÖSCHEN
+    $db->delete_query("templategroups", "prefix = 'teamheader'");
+
     // TEMPLATES LÖSCHEN
     $db->delete_query("templates", "title LIKE '%teamheader%'");
 }
@@ -196,7 +206,7 @@ function teamheader_deactivate(){
 // THE MAGIC
 function teamheader_global() {
     
-    global $db, $mybb, $templates, $theme, $teamheader;
+    global $db, $mybb, $templates, $theme, $teamheader, $teamheader_bit;
 
     // EINSTELLUNGEN ZIEHEN
     // Spielername - Profilfeld
@@ -493,9 +503,9 @@ function teamheader_global() {
                 }
             }
             
-            eval('$teamheader_bit .= "'.$templates->get('header_teamheader_bit').'";');
+            eval('$teamheader_bit .= "'.$templates->get('teamheader_bit').'";');
         }
         
     }
-    eval('$teamheader = "'.$templates->get('header_teamheader').'";');
+    eval('$teamheader = "'.$templates->get('teamheader').'";');
 }
