@@ -26,19 +26,19 @@ Wichtig bei dem Plugin ist, dass im ACP die UIDs der Teammitglieder angegeben we
 
 # Demo
  Teamanzeige - Standard<p>
- <img src="https://www.bilder-hochladen.net/files/m4bn-bk-e743.png" />
+ <img src="https://stormborn.at/plugins/teamheader_default.png" />
  
  Teamanzeige - Graue Avatarfunktion<p>
- <img src="https://www.bilder-hochladen.net/files/big/m4bn-bn-5db2.png" />
+ <img src="https://stormborn.at/plugins/teamheader_grau.png" />
  
  Teamanzeige - mit Abwesenheitsnotiz & ohne Rückkehrdatum<p>
- <img src="https://www.bilder-hochladen.net/files/m4bn-bp-19c1.png" />
+ <img src="https://stormborn.at/plugins/teamheader_away.png" />
  
  Teamanzeige - mit Abwesenheitsnotiz & mit Rückkehrdatum<p>
- <img src="https://www.bilder-hochladen.net/files/m4bn-bo-a0d5.png" />
+ <img src="https://stormborn.at/plugins/teamheader_offline.png" />
  
  Teamanzeige - Offline-Anzeige<p>
- <img src="https://www.bilder-hochladen.net/files/m4bn-br-acf6.png" />
+ <img src="https://stormborn.at/plugins/teamheader_offlineaway.png" />
  
  Teamanzeige - Offline-Anzeige mit Abwesenheitsnotiz & ohne Rückkehrdatum<p>
- <img src="https://www.bilder-hochladen.net/files/m4bn-bw-9bbd.png" />
+ <img src="https://stormborn.at/plugins/teamheader_default.png" />
