@@ -124,6 +124,8 @@ function teamheader_install(){
         "title" => $db->escape_string("Teamanzeige im Header"),
     );
 
+    $db->insert_query("templategroups", $templategroup);
+
     // TEMPLATES ERSTELLEN
     $insert_array = array(
         'title'		=> 'teamheader',
