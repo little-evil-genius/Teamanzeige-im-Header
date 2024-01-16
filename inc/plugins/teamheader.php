@@ -16,7 +16,7 @@ function teamheader_info(){
 		"website"	=> "https://github.com/little-evil-genius/Teamanzeige-im-Header",
 		"author"	=> "little.evil.genius",
 		"authorsite"	=> "https://storming-gates.de/member.php?action=profile&uid=1712",
-		"version"	=> "1.1",
+		"version"	=> "1.1.1",
 		"compatibility" => "18*"
 	);
 }
@@ -244,6 +244,7 @@ function teamheader_global() {
         LIMIT 1
         ");
 
+	    $teamheader_bit = "";
         while($team = $db->fetch_array($teamheader_query)) {
 
             // LEER LAUFEN LASSEN
