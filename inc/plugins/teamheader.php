@@ -244,7 +244,6 @@ function teamheader_global() {
         LIMIT 1
         ");
 
-	    $teamheader_bit = "";
         while($team = $db->fetch_array($teamheader_query)) {
 
             // LEER LAUFEN LASSEN
