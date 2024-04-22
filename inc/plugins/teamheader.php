@@ -1,6 +1,6 @@
 <?php
-error_reporting ( -1 );
-ini_set ( 'display_errors', true );
+//error_reporting ( -1 );
+//ini_set ( 'display_errors', true );
 // Direktzugriff auf die Datei aus Sicherheitsgründen sperren
 if(!defined("IN_MYBB"))
 {
@@ -289,6 +289,15 @@ function teamheader_uninstall(){
 
     // TEMPLATES LÖSCHEN
     $db->delete_query("templates", "title LIKE 'teamheader%'");
+
+	require_once MYBB_ADMIN_DIR."inc/functions_themes.php";
+
+    // STYLESHEET ENTFERNEN
+	$db->delete_query("themestylesheets", "name = 'teamheader.css'");
+	$query = $db->simple_select("themes", "tid");
+	while($theme = $db->fetch_array($query)) {
+		update_theme_stylesheet_list($theme['tid']);
+	}
 }
  
 // Diese Funktion wird aufgerufen, wenn das Plugin aktiviert wird.
