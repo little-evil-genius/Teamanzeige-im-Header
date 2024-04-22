@@ -1,6 +1,6 @@
 <?php
-//error_reporting ( -1 );
-//ini_set ( 'display_errors', true );
+error_reporting ( -1 );
+ini_set ( 'display_errors', true );
 // Direktzugriff auf die Datei aus Sicherheitsgründen sperren
 if(!defined("IN_MYBB"))
 {
@@ -501,6 +501,11 @@ function teamheader_global() {
             } else {
                 $playerid = $db->fetch_field($db->simple_select("application_ucp_fields", "id", "fieldname = '".$playername_setting."'"), "id");
                 $playername = $db->fetch_field($db->simple_select("application_ucp_userfields", "value", "fieldid = '".$playerid."' AND uid = '".$uid."'"), "value");
+            }
+            if ($playername == "") {
+                $playername = $lang->teamheader_playername_default;
+            } else {
+                $playername = $playername;
             }
 
             // LETZTE AKTIVITÄT
