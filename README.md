@@ -108,20 +108,4 @@ Es wird automatisch in jedes bestehende und neue Design hinzugefügt. Man sollte
 Bei den Optionen Steckifeld/Profilfeld gibt es eine "spezielle" Funktion. Anstelle eines vollständigen Links, der auf eine Grafik verweist, können die Teammitglieder auch nur den Dateinamen angeben. Um diese Option zu nutzen, muss im Template die Variable {$graphic_link} durch {$graphic_link_theme} ersetzt werden. Damit sucht das Plugin nach einer Datei mit dem angegebenen Namen aus dem Steckifeld/Profilfeld im entsprechenden Bildordner des Designs, der im ACP unter den einzelnen Themen im Pfad zu den Bildern festgelegt wurde. Wenn eine Datei mit diesem Namen vorhanden ist, wird diese Grafik angezeigt. Andernfalls wird die Standardgrafik verwendet.
 
 # Demo
- Teamanzeige - Standard<p>
- <img src="https://stormborn.at/plugins/teamheader_default.png" />
- 
- Teamanzeige - Graue Avatarfunktion<p>
- <img src="https://stormborn.at/plugins/teamheader_grau.png" />
- 
- Teamanzeige - mit Abwesenheitsnotiz & ohne Rückkehrdatum<p>
- <img src="https://stormborn.at/plugins/teamheader_away.png" />
- 
- Teamanzeige - mit Abwesenheitsnotiz & mit Rückkehrdatum<p>
- <img src="https://stormborn.at/plugins/teamheader_offline.png" />
- 
- Teamanzeige - Offline-Anzeige<p>
- <img src="https://stormborn.at/plugins/teamheader_offlineaway.png" />
- 
- Teamanzeige - Offline-Anzeige mit Abwesenheitsnotiz & ohne Rückkehrdatum<p>
- <img src="https://stormborn.at/plugins/teamheader_default.png" />
+ <img src="https://stormborn.at/plugins/teamheader.png" />
