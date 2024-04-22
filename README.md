@@ -33,7 +33,7 @@ Das Plugin ist kompatibel mit den klassischen Profilfeldern von MyBB und dem <a 
 # Neue Variable
 - header: {$teamheader}
 
-# Neues CSS - postinggoal.css
+# Neues CSS - teamheader.css
 Es wird automatisch in jedes bestehende und neue Design hinzugefügt. Man sollte es einfach einmal abspeichern - auch im Default. Sonst kann es passieren, dass es bei einem Update von MyBB entfernt wird.
 <blockquote> .teamheader-container {
     background: #fff;
