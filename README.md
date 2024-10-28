@@ -7,7 +7,7 @@ Für die Grafik der Teammitglieden stehen folgende Optionen zur Verfügung: Es k
 Bei den Optionen Steckifeld/Profilfeld gibt es eine "spezielle" Funktion. Anstelle eines vollständigen Links, der auf eine Grafik verweist, können die Teammitglieder auch nur den Dateinamen angeben. Um diese Option zu nutzen, muss im Template die Variable {$graphic_link} durch {$graphic_link_theme} ersetzt werden. Damit sucht das Plugin nach einer Datei mit dem angegebenen Namen aus dem Steckifeld/Profilfeld im entsprechenden Bildordner des Designs, der im ACP unter den einzelnen Themen im Pfad zu den Bildern festgelegt wurde. Wenn eine Datei mit diesem Namen vorhanden ist, wird diese Grafik angezeigt. Andernfalls wird die Standardgrafik verwendet.
 
 # Vorrausetzung
-- Der <a href="https://www.mybb.de/erweiterungen/18x/plugins-verschiedenes/enhanced-account-switcher/" target="_blank">Accountswitcher</a> von doylecc <b>muss</b> installiert sein.
+- Der <a href="https://doylecc.altervista.org/bb/downloads.php?dlid=26&cat=2" target="_blank">Accountswitcher</a> von doylecc <b>muss</b> installiert sein.
 
 # ACP-Einstellungen - Teamanzeige im Header
 - Teammitglieder
