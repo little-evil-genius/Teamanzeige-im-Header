@@ -8,6 +8,7 @@ Bei den Optionen Steckifeld/Profilfeld gibt es eine "spezielle" Funktion. Anstel
 
 # Vorrausetzung
 - Der <a href="https://doylecc.altervista.org/bb/downloads.php?dlid=26&cat=2" target="_blank">Accountswitcher</a> von doylecc <b>muss</b> installiert sein.
+-  Das ACP Modul <a href="https://github.com/little-evil-genius/rpgstuff_modul" target="_blank">RPG Stuff</a> <b>muss</b> vorhanden sein.
 
 # ACP-Einstellungen - Teamanzeige im Header
 - Teammitglieder
@@ -35,6 +36,7 @@ Das Plugin ist kompatibel mit den klassischen Profilfeldern von MyBB und dem <a 
 
 # Neues CSS - teamheader.css
 Es wird automatisch in jedes bestehende und neue Design hinzugefügt. Man sollte es einfach einmal abspeichern - auch im Default. Sonst kann es passieren, dass es bei einem Update von MyBB entfernt wird.
+Nach einem MyBB Upgrade fehlt der Stylesheets im Masterstyle? Im ACP Modul "RPG Erweiterungen" befindet sich der Menüpunkt "Stylesheets überprüfen" und kann von hinterlegten Plugins den Stylesheet wieder hinzufügen.
 <blockquote> .teamheader-container {
     background: #fff;
     width: 100%;
